@@ -1,0 +1,43 @@
+
+/* Formatando o modo de configuração do box dos elementos  */
+* {
+    box-sizing: border-box;
+}
+
+.topnav
+{
+   overflow: hidden;
+   background-color: #A8DADC;
+   padding: 20;
+}
+
+.topnav a 
+{
+    float: left;
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px ;
+    text-decoration: none;
+}
+
+.topnav a:hover
+{
+    color: #AA1D1D;
+    border-bottom: #AA1D1D solid 2px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    border-bottom: #ff0000 solid 1px;
+    border-bottom-right-radius: 5px;
+}
+
+
+body {
+    margin: 0 auto;
+    background-image: url(/imagens/WhatsApp\ Image\ 2023-03-10\ at\ 16.07.22.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
