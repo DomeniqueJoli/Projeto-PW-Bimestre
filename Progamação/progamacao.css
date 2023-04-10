@@ -1,24 +1,28 @@
-
-/* Formatando o modo de configuração do box dos elementos  */
 * {
     box-sizing: border-box;
 }
 
 .topnav
 {
-   overflow: hidden;
-   background-color: #A8DADC;
-   padding: 20;
+    overflow: hidden; 
+    background-color: #A8DADC;
+    padding: 20;
+    background-image: linear-gradient(to right, black -90% , #A8DADC);
+ 
 }
 
 .topnav a 
 {
     float: left;
     display: block;
+    color: #AA1D1D;
+    border-bottom: solid transparent 2px;
     color: #FFFFFF;
     text-align: center;
     padding: 14px ;
     text-decoration: none;
+    margin-top: 10px;
+    font-size: 20px;
 }
 
 .topnav a:hover
@@ -37,7 +41,7 @@
 
 body {
     margin: 0 auto;
-    background-image: url(/imagens/WhatsApp\ Image\ 2023-03-10\ at\ 16.07.22.jpeg);
+    background-image: url("imagens/backgroundcinelaser.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
