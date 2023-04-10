@@ -42,7 +42,25 @@
 
 body {
     margin: 0 auto;
-    background-image: url(/imagens/WhatsApp\ Image\ 2023-03-10\ at\ 16.07.22.jpeg);
+    background-image: url("Imagens/backgroundcinelaser.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+.filmesEmCartaz{
+    width: 15%;
+    margin-left: 4%;
+}
+
+p{
+    font-family: arial;
+    color: white;
+    background-color: #AA1D1D;
+    block-size: 40px;
+    /* padding-right: 100%; */
+}
+
+div{
+    padding-top: 4%;
 }
