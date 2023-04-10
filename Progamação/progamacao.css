@@ -1,5 +1,3 @@
-
-/* Formatando o modo de configuração do box dos elementos  */
 * {
     box-sizing: border-box;
 }
@@ -37,7 +35,7 @@
 
 body {
     margin: 0 auto;
-    background-image: url(/imagens/WhatsApp\ Image\ 2023-03-10\ at\ 16.07.22.jpeg);
+    background-image: url("imagens/backgroundcinelaser.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
