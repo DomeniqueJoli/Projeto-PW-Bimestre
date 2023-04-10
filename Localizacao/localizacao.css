@@ -1,19 +1,24 @@
 
 .topnav
 {
-   overflow: hidden; 
+    overflow: hidden; 
    background-color: #A8DADC;
    padding: 20;
+   background-image: linear-gradient(to right, black -90% , #A8DADC);
 }
 
 .topnav a 
 {
     float: left;
     display: block;
+    color: #AA1D1D;
+    border-bottom: solid transparent 2px;
     color: #FFFFFF;
     text-align: center;
     padding: 14px ;
     text-decoration: none;
+    margin-top: 10px;
+    font-size: 20px;
 }
 
 .topnav a:hover
