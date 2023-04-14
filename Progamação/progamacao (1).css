@@ -25,12 +25,6 @@
     font-size: 20px;
 }
 
-.topnav a:hover
-{
-    color: #AA1D1D;
-    border-bottom: #AA1D1D solid 2px;
-}
-
 .topnav a:hover {
     background-color: #ddd;
     color: black;
@@ -44,6 +38,7 @@ body {
     background-image: url("imagens/backgroundcinelaser.png");
     background-repeat: no-repeat;
     background-size: cover;
+    /* Sem cover? */
 }
 
 
@@ -69,6 +64,8 @@ a:hover{
     color: white;
     border-bottom: #AA1D1D solid 1px;
     border-bottom-right-radius: 5px;
+    text-decoration: none;
+
 }
 
 .filmesEmCartaz{
@@ -77,16 +74,36 @@ a:hover{
 }
 
 p{
+    align-items: center;
     font-family: arial;
     text-align: center;
     color: white;
     background-color: #AA1D1D;
-    block-size: 40px;
+    block-size: 45px;
     margin-left: 5%;
-    width: 80px;
-    border-radius: 18%;
+    width: 90px;
+    border-radius: 15%;
 }
 
 .Bot {
     display: flex;
+}
+
+.botoes{
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    font-family: arial;
+    color: white;
+    background-color: #AA1D1D;
+    block-size: 32px;
+    margin-left: 4%;
+    padding-left: 28px;
+    width: 185px;
+    border-radius: 7%;
+}
+
+.asdfasdf {
+    display: flex;
+    align-items: center;
 }
