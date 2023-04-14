@@ -56,3 +56,7 @@ body{
  .titulo h2 {
     text-align: center;
  }
+
+ .imagemalinhadaesquerda{
+   margin-right: 14px; ;
+ }
