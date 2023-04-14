@@ -49,6 +49,7 @@ body{
  }
  .imagemalinhadaesquerda {
     float: left;
+    margin-right: 14px; 
  }
  .titulo{
    clear: both;
@@ -57,6 +58,3 @@ body{
     text-align: center;
  }
 
- .imagemalinhadaesquerda{
-   margin-right: 14px; ;
- }
