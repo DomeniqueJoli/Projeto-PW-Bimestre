@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styleGeral.css">
+    <title>Fornecedor</title>
+</head>
+<body>
+
+  <nav class="topnav">
+    <img src="/images/logo.png">
+    <a href="cliente.html" >Cadastrar Cliente</a>
+    <a href="fornecedor.html" >Cadastrar Fornecedor</a>
+</nav>
+
+    <main class="container">
+      <form class="boots">
+            
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="inputNome">Nome</label>
+              <input type="Nome" name="input" class="form-control" id="inputNome" placeholder="Nome" required> 
+              <span class="mensagem-erro" data-erro=""></span>
+            </div>
+
+            <div class="form-group col-md-4">
+              <label for="inputSobrenome">Sobrenome</label>
+              <input type="Sobrenome" name="input" class="form-control" id="inputSobrenome" placeholder="Sobrenome"required>
+              <span class="mensagem-erro" data-erro=""></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputemail">E-mail</label>
+                <input type="email" name="input" class="form-control" id="inputemail" placeholder="E-mail" required> 
+                <span class="mensagem-erro" data-erro=""></span>
+              </div>
+
+              <div class="form-group col-md-4">
+                  <label for="inputCPFe">CPF</label>
+                  <input type="CPF" name="input" class="form-control" id="inputCPF" placeholder="CPF"required>
+                  <span class="mensagem-erro" data-erro=""></span>
+                </div>
+              </div>
+
+          <div class="form-row">
+              <div class="form-group col-md-8">
+                  <label for="inputAddress">Endereço</label>
+                  <input type="text" name="input" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0"required>
+                  <span class="mensagem-erro" data-erro=""></span>
+                </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="inputCity">Cidade</label>
+              <input type="text" name="input" class="form-control" id="inputCity" placeholder="Cidade" required>
+              <span class="mensagem-erro" data-erro=""></span>
+            </div>
+
+            <div class="form-group col-md-4">
+              <label for="inputTelefone">Telefone</label>
+              <input type="text" name="input" class="form-control" id="inputTell" placeholder="Telefone" required>
+              <span class="mensagem-erro" data-erro=""></span>
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="inputEstado">Estado</label>
+              <select id="inputEstado" required name="input" class="form-control">
+                <option selected value="">Escolher...</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+              </select>
+              <span class="mensagem-erro" data-erro=""></span>
+            </div>
+
+            <div class="form-group col-md-2">
+              <label for="inputCEP">CEP</label>
+              <input type="text" name="input" class="form-control" id="inputCEP" placeholder="CEP" required>
+              <span class="mensagem-erro" data-erro=""></span>
+            </div>
+
+          </div>
+          <button type="submit" class="btn-primary">Cadastrar</button>
+        </form>
+  </main>
+
+  <script src="/js/valida.js"></script>
+
+</body>
+</html>
