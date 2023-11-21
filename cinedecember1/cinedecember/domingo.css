@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.topnav
+{
+   overflow: hidden; 
+   background-color: #A8DADC;
+   padding: 20;
+   background-image: linear-gradient(to right, black -90% , #A8DADC);
+}
+
+.topnav a 
+{
+    float: left;
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px ;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.topnav a:hover
+{
+    color: #AA1D1D;
+    border-bottom: #AA1D1D solid 2px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    border-bottom: #ff0000 solid 1px;
+    border-bottom-right-radius: 5px;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+    background-image: url("imagens/backgroundcinelaser.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+div {
+    padding-top: 4%;
+}
+
+.dias{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    border-style: groove;
+    border-color: #AA1D1D;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 4%;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: #AA1D1D;
+    color: white;
+    border-bottom: #AA1D1D solid 1px;
+    border-bottom-right-radius: 5px;
+}
+
+.filmesEmCartaz{
+    width: 15%;
+    margin-left: 4%;
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: white;
+    background-color: #AA1D1D;
+    block-size: 40px;
+    margin-left: 5%;
+    width: 80px;
+    border-radius: 18%;
+}
+
+.Bot {
+    display: flex;
+}

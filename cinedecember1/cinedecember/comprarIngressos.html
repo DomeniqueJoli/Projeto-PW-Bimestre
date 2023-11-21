@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine December</title>
+    <link rel="stylesheet" href="stylecontato.css">
+    <link rel="stylesheet" href="styleloc.css">
+    <link rel="stylesheet" href="comprarIngressos.css">
+
+</head>
+<body>
+    <nav class="topnav">
+        <select class="drop" onchange="setCine(this.value)">
+            <option value="">Selecione sua Cidade</option>
+                                                                    <option  value="ARIQUEMES">ARIQUEMES&minus;RO</option>
+                                                                    <option  value="BARRA DO GARÇAS">BARRA DO GARÇAS&minus;MT</option>
+                                                                    <option  value="CACOAL">CACOAL&minus;RO</option>
+                                                                    <option  value="CASCAVEL">CASCAVEL&minus;PR</option>
+                                                                    <option  value="ITABAIANA">ITABAIANA&minus;SE</option>
+                                                                    <option  value="JI-PARANA">JI-PARANA&minus;RO</option>
+                                                                    <option  value="PASSO FUNDO">PASSO FUNDO&minus;RS</option>
+                                                                    <option  value="PORTO VELHO">PORTO VELHO&minus;RO</option>
+                                                                    <option  value="ROLIM DE MOURA">ROLIM DE MOURA&minus;RO</option>
+                                                                    <option  value="SORRISO">SORRISO&minus;MT</option>
+                                                                    <option  value="TANGARA DA SERRA">TANGARA DA SERRA&minus;MT</option>
+                                                                    <option  value="UMUARAMA">UMUARAMA&minus;PR</option>
+                                                                    <option  value="VILHENA">VILHENA&minus;RO</option>          
+        </select>
+        <a href="comprarIngressos.html" style="float: right">Comprar Ingressos</a>
+        <a href="quemsomos.html" style="float: right">Quem somos</a>
+        <a href="localizacao.html" style="float: right">Localização</a>
+        <a href="contato.html" style="float: right">Contato</a>
+        <a href="emBreve.html" style="float: right">Em breve </a>
+        <a href="progamacao (1).html" style="float: right">Programação</a>
+        <a href="cadastrocliente.html" style="float: right">Cadastrar</a>
+        <a href="index.html" style="float: right">Home</a>
+        <img src="imagens/logo.png" alt="" style="float: left; width: 100px; margin-left: 55px; margin-top: 5px;">
+  </nav>
+
+
+    <main>
+            
+<div class="container">
+
+    <div class="card-container">
+
+        <div class="front">
+            <div class="Imgs">
+                <img src="Imgs/chip.png" alt="">
+                <img src="Imgs/visa.png" alt="">
+            </div>
+            <div class="card-number-box">################</div>
+            <div class="flexbox">
+                <div class="box">
+                    <span>card holder</span>
+                    <div class="card-holder-name">full name</div>
+                </div>
+                <div class="box">
+                    <span>expires</span>
+                    <div class="expiration">
+                        <span class="exp-month">mm</span>
+                        <span class="exp-year">yy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="back">
+            <div class="stripe"></div>
+            <div class="box">
+                <span>cvv</span>
+                <div class="cvv-box"></div>
+                <img src="Imgs/visa.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    
+    <form action="">
+
+        <div class="inputBox">
+            <span>Day</span>
+            <select name="" id="">
+                <option value="days" selected disabled>Days</option>
+                <option value="01">Sunday</option>
+                <option value="02">Monday</option>
+                <option value="03">Tuesday</option>
+                <option value="04">Wednesday</option>
+                <option value="05">Thursday</option>
+                <option value="06">Friday</option>
+                <option value="07">Saturday</option>
+            </select>
+        </div>   
+        
+        <div class="inputBox">
+            <span>Session</span>
+            <select name="" id="">
+                <option value="session" selected disabled>session</option>
+                <option value="01">16:00</option>
+                <option value="02">19:00</option>
+                <option value="03">20:00</option>
+            </select>
+        </div>
+
+        <div class="inputBox">
+            <span>Value</span>
+            <input type="text" placeholder="20,00 R$" readonly class="card-holder-input">
+        </div>
+
+        <div class="inputBox">
+            <span>card number</span>
+            <input type="text" maxlength="16" class="card-number-input">
+        </div>
+        <div class="inputBox">
+            <span>card holder</span>
+            <input type="text" class="card-holder-input">
+        </div>
+
+        <div class="flexbox">
+            <div class="inputBox">
+                <span>expiration mm</span>
+                <select name="" id="" class="month-input">
+                    <option value="month" selected disabled>month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <div class="inputBox">
+                <span>expiration yy</span>
+                <select name="" id="" class="year-input">
+                    <option value="year" selected disabled>year</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                </select>
+            </div>
+            <div class="inputBox">
+                <span>cvv</span>
+                <input type="text" maxlength="4" class="cvv-input">
+            </div>
+        </div>
+        <input type="submit" value="submit" class="submit-btn">
+    </form>
+
+</div>    
+    
+
+
+
+
+
+<script>
+
+document.querySelector('.card-number-input').oninput = () =>{
+    document.querySelector('.card-number-box').innerText = document.querySelector('.card-number-input').value;
+}
+
+document.querySelector('.card-holder-input').oninput = () =>{
+    document.querySelector('.card-holder-name').innerText = document.querySelector('.card-holder-input').value;
+}
+
+document.querySelector('.month-input').oninput = () =>{
+    document.querySelector('.exp-month').innerText = document.querySelector('.month-input').value;
+}
+
+document.querySelector('.year-input').oninput = () =>{
+    document.querySelector('.exp-year').innerText = document.querySelector('.year-input').value;
+}
+
+document.querySelector('.cvv-input').onmouseenter = () =>{
+    document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(-180deg)';
+    document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(0deg)';
+}
+
+document.querySelector('.cvv-input').onmouseleave = () =>{
+    document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(0deg)';
+    document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(180deg)';
+}
+
+document.querySelector('.cvv-input').oninput = () =>{
+    document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
+}
+</script>
+
+    </main>
+</body>
+</html>

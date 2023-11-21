@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine December</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylecontato.css">
+    <link rel="stylesheet" href="styleloc.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="topnav">
+        <select class="drop" onchange="setCine(this.value)">
+            <option value="">Selecione sua Cidade</option>
+            <option value="ARIQUEMES">ARIQUEMES&minus;RO</option>
+            <option value="BARRA DO GARÇAS">BARRA DO GARÇAS&minus;MT</option>
+            <option value="CACOAL">CACOAL&minus;RO</option>
+            <option value="CASCAVEL">CASCAVEL&minus;PR</option>
+            <option value="ITABAIANA">ITABAIANA&minus;SE</option>
+            <option value="JI-PARANA">JI-PARANA&minus;RO</option>
+            <option value="PASSO FUNDO">PASSO FUNDO&minus;RS</option>
+            <option value="PORTO VELHO">PORTO VELHO&minus;RO</option>
+            <option value="ROLIM DE MOURA">ROLIM DE MOURA&minus;RO</option>
+            <option value="SORRISO">SORRISO&minus;MT</option>
+            <option value="TANGARA DA SERRA">TANGARA DA SERRA&minus;MT</option>
+            <option value="UMUARAMA">UMUARAMA&minus;PR</option>
+            <option value="VILHENA">VILHENA&minus;RO</option>
+        </select>
+        <a href="comprarIngressos.html" style="float: right">Comprar Ingressos</a>
+        <a href="quemsomos.html" style="float: right">Quem somos</a>
+        <a href="localizacao.html" style="float: right">Localização</a>
+        <a href="contato.html" style="float: right">Contato</a>
+        <a href="emBreve.html" style="float: right">Em breve </a>
+        <a href="progamacao (1).html" style="float: right">Programação</a>
+        <a href="cadastrocliente.html" style="float: right">Cadastrar</a>
+        <a href="index.html" style="float: right">Home</a>
+
+        <img src="imagens/logo.png" alt="" style="float: left; width: 100px; margin-left: 55px; margin-top: 5px;">
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagens/coverflow1.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/coverflow2.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/coverflow3.jpeg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+
+                    <div class="imgs">
+                        <img src="imagens/filmeSabado.jpg" style="width: 200px;" alt="capa">
+                    </div>
+
+                    <div class="imgs">
+                        <img src="imagens/Livre.png" style="width: 50px;" alt="classificacao">
+                    </div>
+
+                    <p>Animação</p>
+
+                    <p>Toy Story 4</p>
+
+                </li>
+                <li class="splide__slide">
+
+                        <div class="imgs">
+                            <img src="imagens/filmeDomingo.jpg" style="width: 200px;" alt="capa">
+                        </div>
+    
+                        <div class="imgs">
+                            <img src="imagens/Livre.png" style="width: 50px;" alt="classificacao">
+                        </div>
+    
+                        <p>Animação</p>
+    
+                        <p>Moana</p>    
+
+                </li>
+                <li class="splide__slide">
+                    <div class="imgs">
+                        <img src="imagens/filmeSegunda.jpg" style="width: 200px;" alt="capa">
+                    </div>
+
+                    <div class="imgs">
+                        <img src="imagens/Livre.png" style="width: 50px;" alt="classificacao">
+                    </div>
+
+                    <p>Animação</p>
+
+                    <p>Frozen</p>                  
+                </li>
+                <li class="splide__slide">
+                    <div class="imgs">
+                        <img src="imagens/filmeTerca.jpg" style="width: 200px;" alt="capa">
+                    </div>
+
+                    <div class="imgs">
+                        <img src="imagens/Livre.png" style="width: 50px;" alt="classificacao">
+                    </div>
+
+                    <p>Animação</p>
+
+                    <p>Procurando Nemo</p>                 
+                </li>
+                <li class="splide__slide">
+                    <div class="imgs">
+                        <img src="imagens/filmeQuarta.jpg" style="width: 200px;" alt="capa">
+                    </div>
+
+                    <div class="imgs">
+                        <img src="imagens/Livre.png" style="width: 50px;" alt="classificacao">
+                    </div>
+
+                    <p>Animação</p>
+
+                    <p>Zootopia</p>                 
+                </li>
+                <li class="splide__slide">
+                    <div class="imgs">
+                        <img src="imagens/filmeQuinta.jpg" style="width: 200px;" alt="capa">
+                    </div>
+
+                    <div class="imgs">
+                        <img src="imagens/Livre.png" style="width: 50px;" alt="classificacao">
+                    </div>
+
+                    <p>Animação</p>
+
+                    <p>Viagem a Chihiro</p>               
+                </li>
+                <li class="splide__slide">
+                    <div class="imgs">
+                        <img src="imagens/filmeSexta.jpg" style="width: 200px;" alt="capa">
+                    </div>
+
+                    <div class="imgs">
+                        <img src="imagens/Livre.png" style="width: 50px;" alt="classificacao">
+                    </div>
+
+                    <p>Animação</p>
+
+                    <p>Up: Altas Aventuras</p>               
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            perPage: 6,
+            perMove: 1,
+        });
+
+        splide.mount();
+    </script>
+
+</body>
+
+</html>

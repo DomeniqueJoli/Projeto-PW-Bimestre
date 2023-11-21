@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-image: url("imagens/backgroundcinelaser.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: cover;
+    margin: 0 auto;
+}
+
+.topnav
+{
+   overflow: hidden;
+   background-color: #A8DADC;
+   padding: 20;
+}
+
+.topnav a 
+{
+    float: left;
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px ;
+    text-decoration: none;
+}
+
+.topnav a:hover
+{
+    color: #AA1D1D;
+    border-bottom: #AA1D1D solid 2px;
+}
+ h2{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 40px;
+ }
+
+ .imagem{
+    width: 3000000px;
+ }
+  div{
+    text-align: center
+  }

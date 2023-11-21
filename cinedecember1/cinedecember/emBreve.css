@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+
+body{
+   background-image: url(imagens/backgroundcinelaser.png);
+   background-repeat: no-repeat;
+  /* background-size: 100%;*/
+   margin: 0 auto;
+   background-size: cover;
+}
+
+h2{
+   font-family: 'Inter';
+   color: white;
+   font-size: 30px;
+}
+
+ol{
+   font-family: 'Inter';
+   color: white;
+   font-size: 20px;
+}
+
+.imagem{
+   width: 3000000px;
+}
+
+img{
+   width: 250px;
+}
+.imagemalinhadaesquerda {
+   float: left;
+   margin-right: 14px; 
+}
+.titulo{
+  font-family: 'Inter';
+  clear: both;
+ }
+.titulo h2 {
+   font-family: 'Inter';
+   text-align: center;
+}
+
+/* Parte da topNav */
+
+.topnav
+{
+   overflow: hidden; 
+   background-color: #A8DADC;
+   background-image: linear-gradient(to right, black -90% , #A8DADC);
+}
+
+.topnav a 
+{
+    float: left;
+    display: block;
+    color: #AA1D1D;
+    border-bottom: solid transparent 2px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px ;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Inter';
+
+}
+
+.topnav a:hover
+{
+    color: #AA1D1D;
+    border-bottom: #AA1D1D solid 2px;
+}
+
+.drop
+{
+   font-size: 20px; 
+   float: right;
+   margin-top: 15px;
+   margin-right: 25px;
+   color: #AA1D1D;
+   border-radius: 20px;
+   border: #AA1D1D;
+   padding: 8px 10px;
+}

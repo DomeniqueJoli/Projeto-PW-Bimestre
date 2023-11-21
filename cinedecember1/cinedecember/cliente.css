@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+
+body
+{
+  font-family: 'Inter', sans-serif;
+  background-image: url(imagens/CineDecemberBackground.png);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+.topnav
+{
+   overflow: hidden; 
+   background-color: #A8DADC;
+   padding: 20;
+   background-image: linear-gradient(to right, black -90% , #A8DADC);
+}
+
+.topnav a 
+{   
+  float: left;
+  display: flex;
+  color: #FFFFFF;
+  padding: 15px ;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+.topnav a:hover
+{
+    color: #AA1D1D;
+    border-bottom: #AA1D1D solid 2px;
+}
+
+.topnav img
+{
+  float: left; 
+  width: 100px; 
+  margin-left: 40px;
+  margin-top: 7px;
+}
+
+.mensagem-erro{
+  color: #AA1D1D;
+}
+
+input
+{
+  display: block;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+}
+
+label
+{
+  color: #FFFFFF;
+}
+
+.btn-primary
+{
+  background-color: #AA1D1D;
+  color: #FFFFFF;
+  border-radius: 20px;
+  margin-top: 15px;
+}

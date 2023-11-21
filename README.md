@@ -1,3 +1,0 @@
-# Projeto
-Trabalho de PW
-  

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine December</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cliente.css">
+    <link rel="stylesheet" href="scriptcliente.php">
+
+</head>
+<body>
+    <nav class="topnav">
+        <select class="drop" onchange="setCine(this.value)">
+            <option value="">Selecione sua Cidade</option>
+                                                                    <option  value="ARIQUEMES">ARIQUEMES&minus;RO</option>
+                                                                    <option  value="BARRA DO GARÇAS">BARRA DO GARÇAS&minus;MT</option>
+                                                                    <option  value="CACOAL">CACOAL&minus;RO</option>
+                                                                    <option  value="CASCAVEL">CASCAVEL&minus;PR</option>
+                                                                    <option  value="ITABAIANA">ITABAIANA&minus;SE</option>
+                                                                    <option  value="JI-PARANA">JI-PARANA&minus;RO</option>
+                                                                    <option  value="PASSO FUNDO">PASSO FUNDO&minus;RS</option>
+                                                                    <option  value="PORTO VELHO">PORTO VELHO&minus;RO</option>
+                                                                    <option  value="SORRISO">SORRISO&minus;MT</option>
+                                                                    <option  value="TANGARA DA SERRA">TANGARA DA SERRA&minus;MT</option>
+                                                                    <option  value="UMUARAMA">UMUARAMA&minus;PR</option>
+                                                                    <option  value="VILHENA">VILHENA&minus;RO</option>          
+        </select>
+        <a href="comprarIngressos.html" style="float: right">Comprar Ingressos</a>
+        <a href="quemsomos.html" style="float: right">Quem somos</a>
+        <a href="localizacao.html" style="float: right">Localização</a>
+        <a href="contato.html" style="float: right">Contato</a>
+        <a href="emBreve.html" style="float: right">Em breve </a>
+        <a href="progamacao (1).html" style="float: right">Programação</a>
+        <a href="cadastrocliente.html" style="float: right">Cadastrar</a>
+        <a href="index.html" style="float: right">Home</a>
+        <img src="imagens/logo.png" alt="" style="float: left; width: 100px; margin-left: 55px; margin-top: 5px;">
+  </nav>
+    <main>
+
+        <main class="container">
+            <div class="boots">
+              <form action="php/scriptcliente.php" method="POST">
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label for="inputNome">Nome</label>
+                    <input type="Nome" name="inputNome" class="form-control" id="inputNome" placeholder="Nome" required> 
+                    <span class="mensagem-erro" data-erro=""></span>
+                  </div>
+      
+                  <div class="form-group col-md-4">
+                    <label for="inputSobrenome">Sobrenome</label>
+                    <input type="Sobrenome" name="inputSobrenome" class="form-control" id="inputSobrenome" placeholder="Sobrenome"required>
+                    <span class="mensagem-erro" data-erro=""></span>
+                  </div>
+                </div>
+      
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <label for="inputemail">E-mail</label>
+                      <input type="email" name="inputEmail" class="form-control" id="inputemail" placeholder="E-mail" required> 
+                      <span class="mensagem-erro" data-erro=""></span>
+                    </div>
+      
+                    <div class="form-group col-md-4">
+                        <label for="inputCPFe">CPF</label>
+                        <input type="CPF" name="inputCPF" class="form-control" id="inputCPF" placeholder="CPF"required>
+                        <span class="mensagem-erro" data-erro=""></span>
+                      </div>
+                    </div>
+      
+                <div class="form-row">
+                    <div class="form-group col-md-8">
+                        <label for="inputAddress">Endereço</label>
+                        <input type="text" name="inputEndereco" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0"required>
+                        <span class="mensagem-erro" data-erro=""></span>
+                      </div>
+                </div>
+      
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label for="inputCity">Cidade</label>
+                    <input type="text" name="inputCidade" class="form-control" id="inputCity" placeholder="Cidade" required>
+                    <span class="mensagem-erro" data-erro=""></span>
+                  </div>
+      
+                  <div class="form-group col-md-4">
+                    <label for="inputTelefone">Telefone</label>
+                    <input type="text" name="inputTelefone" class="form-control" id="inputTell" placeholder="Telefone" required>
+                    <span class="mensagem-erro" data-erro=""></span>
+                  </div>
+      
+                  <div class="form-group col-md-6">
+                    <label for="inputEstado">Estado</label>
+                    <select id="inputEstado" required name="inputEstado" class="form-control">
+                      <option selected value="">Escolher...</option>
+                      <option value="AC">AC</option>
+                      <option value="AL">AL</option>
+                      <option value="AP">AP</option>
+                      <option value="AM">AM</option>
+                      <option value="BA">BA</option>
+                      <option value="CE">CE</option>
+                      <option value="DF">DF</option>
+                      <option value="ES">ES</option>
+                      <option value="GO">GO</option>
+                      <option value="MA">MA</option>
+                      <option value="MT">MT</option>
+                      <option value="MS">MS</option>
+                      <option value="MG">MG</option>
+                      <option value="PA">PA</option>
+                      <option value="PB">PB</option>
+                      <option value="PR">PR</option>
+                      <option value="PE">PE</option>
+                      <option value="PI">PI</option>
+                      <option value="RJ">RJ</option>
+                      <option value="RN">RN</option>
+                      <option value="RS">RS</option>
+                      <option value="RO">RO</option>
+                      <option value="RR">RR</option>
+                      <option value="SC">SC</option>
+                      <option value="SP">SP</option>
+                      <option value="SE">SE</option>
+                      <option value="TO">TO</option>
+                    </select>
+                    <span class="mensagem-erro" data-erro=""></span>
+                  </div>
+      
+                  <div class="form-group col-md-2">
+                    <label for="inputCEP">CEP</label>
+                    <input type="text" name="inputCEP" class="form-control" id="inputCEP" placeholder="CEP" required>
+                    <span class="mensagem-erro" data-erro=""></span>
+                  </div>
+      
+                </div>
+                <button type="submit" class="btn-primary">Cadastrar</button>
+              </form>
+            </div>
+        </main>
+      
+        <script src="/js/valida.js"></script>
